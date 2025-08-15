@@ -33,7 +33,8 @@ class MyApp extends StatelessWidget {
       future: UserServices.checkUsername("provideusername"),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return CircularProgressIndicator();
+          return CircularProgressIndicator.adaptive();
+         
         } else {
           bool hasUserName = snapshot.data ?? false;
           return MaterialApp(

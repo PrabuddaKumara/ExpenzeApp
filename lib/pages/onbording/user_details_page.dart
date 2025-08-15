@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:demo/models/user_model.dart';
-import 'package:demo/pages/main_page.dart';
+import 'package:demo/pages/home/main_page.dart';
 import 'package:demo/services/user_services.dart';
 import 'package:demo/util/color.dart';
 import 'package:demo/widgets/custom_button.dart';

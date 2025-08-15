@@ -1,4 +1,4 @@
-import 'package:demo/pages/main_page.dart';
+import 'package:demo/pages/home/main_page.dart';
 import 'package:demo/pages/onbording/onbording_page.dart';
 import 'package:flutter/material.dart';
 
