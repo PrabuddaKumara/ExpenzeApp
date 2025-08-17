@@ -14,15 +14,14 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-
   //current index
-  int _currentpage=0;
-
+  int _currentpage = 0;
 
   final List<Widget> _pages = [
+    AddPage(),
     HomePage(),
     Transctionpage(),
-    AddPage(),
+
     BuggectPage(),
     Profilepage(),
   ];
@@ -31,11 +30,10 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentpage,
-        onTap:(index) {
+        onTap: (index) {
           setState(() {
-            _currentpage=index;
+            _currentpage = index;
           });
-          
         },
         type: BottomNavigationBarType.fixed,
         backgroundColor: kWhite,
@@ -65,8 +63,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profile"),
         ],
       ),
-      body:_pages[_currentpage]
-
+      body: _pages[_currentpage],
     );
   }
 }
